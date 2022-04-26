@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- meta tags -->
+<meta charset="utf-8">
+<meta name="keywords" content="bootstrap 5, premium, multipurpose,  scss, saas, eCommerce, Shop" />
+<meta name="description" content="Bootstrap 5 Landing Page Template" />
+<meta name="author" content="www.themeht.com" />
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/style2.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+<link rel="stylesheet"
+href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Title -->
+<title>Home</title>
+
+<!-- Favicon Icon -->
+<link rel="shortcut icon" href="{{ url_for('static', filename = 'images/favicon.ico') }}" />
+
+<!-- inject css start -->
+
+<link href="{{ url_for('static', filename = '/css/theme-plugin.css') }}" rel="stylesheet" />
+<link href="{{ url_for('static', filename = '/css/theme.min.css') }}" rel="stylesheet" />
+
+<!-- inject css end -->
+
+</head>
+
+<body>
+ <!-- Header -->
+ <header class="site-header">
+  <!-- First Bar -->
+      
+    <div class="py-1" style="background-color: #042825;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12 d-flex align-items-center justify-content-between text-white">
+          <div class="d-none d-md-flex align-items-center"> <small class="me-3"><i class="las bi bi-cart3 text-white me-1 align-middle"></i>Welcome to Our store</small>
+          </div>
+          <div class="d-flex align-items-center">
+            
+            <div class="social-icons">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item"><a class="text-muted" href="https://www.facebook.com/profile.php?id=100078348708532"><i class="lab la-facebook-f"></i></a>
+                </li>
+                <li class="list-inline-item"><a class="text-muted" href="https://mobile.twitter.com/zahraaaltmimi"><i class="lab la-twitter"></i></a>
+                </li>
+                <li class="list-inline-item"><a class="text-muted" href="https://www.linkedin.com/company/leaf"><i class="lab la-linkedin-in"></i></a>
+                </li>
+                <li class="list-inline-item"><a class="text-muted" href="https://www.instagram.com/leaf5361/"><i class="lab la-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Second Bar -->
+   <div class="py-md-3 py-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-9 d-none d-md-flex align-items-center">
+                <a class="navbar-brand logo d-none d-lg-block" href="/">
+                    <img class="img-fluid" src="{{ url_for('static', filename = 'images/sitelogo.png') }}" alt="">
+                </a>
+                <div class="d-flex align-items-center ms-lg-11">
+                    <div class="flex-shrink-0"> <i
+                            class="bi bi-telephone-fill ic-2x bg-white text-dark rounded p-2 shadow-sm  me-2"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-3"> <span class="mb-0 d-block">Call Us</span>
+                        <a class="text-muted" href="tel:07709849480">+9647800182324</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="right-nav align-items-center d-flex justify-content-end">
+                    <div class="input-group mb-3 border rounded">
+                        <input class="form-control border-0 border-start" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn text-white" style="background-color: #276955;" type="submit"><i
+                                class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Third Bar -->
+<div id="header-wrap" class="shadow-sm">
+    <div class="container">
+        <div class="row">
+            <!--menu start-->
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand logo d-lg-none" href="/">
+                        <img class="img-fluid" src="{{ url_for('static', filename = 'images/sitelogo.png') }}" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+                            class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                          <li class="nav-item"> <a class="nav-link active" href="/">Home</a>
+                          </li>
+                          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#"
+                                  data-bs-toggle="dropdown">Shop</a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="/plants">Plants</a>
+                                  </li>
+                                  <li><a href="/self-care">Self Care</a>
+                                  </li>
+                                  <li><a href="/candle">Candles</a>
+                                  </li>
+                                  <li><a href="/plastic">Plastic Alternatives</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="nav-item position-static"> <a class="nav-link" href="/blog">Awareness
+                          </a>
+                         </li>
+                          <li class="nav-item position-static"> <a class="nav-link" href="/about">About
+                                  Us</a>
+                          </li>
+                          <li class="nav-item"> <a class="nav-link" href="/contact">Contact Us</a>
+                          </li>
+                          <li class="nav-item"> <a class="nav-link" href="/faq">F.A.Q.</a>
+                          </li>
+                      </ul>
+                  </div>
+                    <div class="right-nav align-items-center d-flex justify-content-end"> <a class="me-1 me-sm-3" href="/signup"><i class="las la-user-alt"></i></a>
+                      <a class="me-3 d-none d-sm-inline" href="#"><i class="lar la-heart"></i></a>
+                      <div>
+                        <a class="d-flex align-items-center" href="/cart" id="header-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"> <span class="bg-white px-2 py-1 shadow-sm rounded" data-cart-items="2">
+                          <i class="las la-shopping-cart"></i>
+                        </span>
+                          <div class="ms-4 d-none d-md-block"> <small class="d-block text-muted">My Cart</small>
+                            <span class="text-dark">2 Items - $52</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                </nav>
+            </div>
+            <!--menu end-->
+        </div>
+    </div>
+</div>
+</header>
+
+
+{% block content %}
+
+{% endblock %}
+
+ <!-- footer -->
+ <footer class="py-11" style="background-color: #042825;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-3"> <a class="footer-logo text-white h2 mb-0" href="/">
+            Leaf Store
+          </a>
+          <p class="my-3 text-muted">the best enviroment friendly products in iraq.</p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a class="text-light ic-2x" href="https://www.facebook.com/people/Eco-Leaf/100078348708532/"><i class="la la-facebook"></i></a>
+            </li>
+            
+            <li class="list-inline-item"><a class="text-light ic-2x" href="https://www.instagram.com/leaf5361/"><i class="la la-instagram"></i></a>
+            </li>
+            <li class="list-inline-item"><a class="text-light ic-2x" href="https://mobile.twitter.com/zahraaaltmimi"><i class="la la-twitter"></i></a>
+            </li>
+            <li class="list-inline-item"><a class="text-light ic-2x" href="https://www.linkedin.com/company/leaf"><i class="la la-linkedin"></i></a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-6 mt-6 mt-lg-0">
+          <div class="row">
+            <div class="col-12 col-sm-4 navbar-dark">
+              <h5 class="mb-4 text-white">Quick Links</h5>
+              <ul class="navbar-nav list-unstyled mb-0">
+                <li class="mb-3 nav-item"><a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#"
+                  data-bs-toggle="dropdown">Shop</a>
+                <ul class="dropdown-menu">
+                  <li><a href="/plants">Plants</a>
+                  </li>
+                  <li><a href="/self-care">Self Care</a>
+                  </li>
+                  <li><a href="/candle">Candles</a>
+                  </li>
+                  <li><a href="/plastic">Plastic Alternatives</a>
+                  </li>
+              </ul>
+              </li>
+              <br>
+                <li class="mb-3 nav-item"><a class="nav-link" href="/blog">Awareness</a>
+                </li>
+                <li class="mb-3 nav-item"><a class="nav-link" href="/about">About Us</a>
+                </li>
+                <li class="mb-3 nav-item"><a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+                <li class="mb-3 nav-item"><a class="nav-link" href="/faq">F.A.Q.</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-4 mt-6 mt-sm-0 navbar-dark">
+              <h5 class="mb-4 text-white">Top Products</h5>
+              <ul class="navbar-nav list-unstyled mb-0">
+                <li class="mb-3 nav-item"><a class="nav-link" href="#">coming soon</a>
+                </li>
+                <li class="mb-3 nav-item"><a class="nav-link" href="#">coming soon</a>
+                </li>
+                <li class="mb-3 nav-item"><a class="nav-link" href="#">coming soon</a>
+                </li>
+                <li class="mb-3 nav-item"><a class="nav-link" href="#">coming soon</a>
+                </li>
+                <li class="mb-3 nav-item"><a class="nav-link" href="#">coming soon</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mt-6 mt-lg-0">
+          <div class="d-flex mb-3">
+            <div class="me-2"> <i class="las la-map ic-2x text-white"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 text-light">Store address</h6>
+              <p class="mb-0 text-muted">Villa 7, St. 38, Dist. 903, Al-Karadah</p>
+            </div>
+          </div>
+          <div class="d-flex mb-3">
+            <div class="me-2"> <i class="las la-envelope ic-2x text-white"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 text-light">Email Us</h6>
+              <a class="text-muted" href="leafe859@gmail.com"> eco.Leaf@gmail.com</a>
+            </div>
+          </div>
+          <div class="d-flex mb-3">
+            <div class="me-2"> <i class="las la-mobile ic-2x text-white"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 text-light">Phone Number</h6>
+              <a class="text-muted" href="tel:07709849480">07709849480</a>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="me-2"> <i class="las la-clock ic-2x text-white"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 text-light">Working Hours</h6>
+              <span class="text-muted">All Week: 9AM - 9PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-8">
+      <div class="row text-muted align-items-center">
+        <div class="col-md-7">Copyright ©2022 All rights reserved
+        </div>
+        <div class="col-md-5 text-md-end mt-3 mt-md-0">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="#">
+                <img class="img-fluid" src="{{ url_for('static', filename = '/images/pay-icon/01.png') }}" alt="">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <img class="img-fluid" src="{{ url_for('static', filename = '/images/pay-icon/02.png') }}" alt="">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <img class="img-fluid" src="{{ url_for('static', filename = '/images/pay-icon/03.png') }}" alt="">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <img class="img-fluid" src="{{ url_for('static', filename = '/images/pay-icon/04.png') }}" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- page wrapper end -->
+
+<!-- Cart Modal -->
+<div class="modal fade cart-modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">Your Cart (2)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <div class="row align-items-center">
+            <div class="col-5 d-flex align-items-center">
+              <div class="me-4">
+                <button type="submit" class="btn btn-dark btn-sm"><i class="las la-times"></i>
+                </button>
+              </div>
+              <!-- Image -->
+              <a href="/product">
+                <img class="img-fluid" src="{{ url_for('static', filename = '/images/candle/bazal2.jpg') }}" alt="...">
+              </a>
+            </div>
+            <div class="col-7">
+              <!-- Title -->
+              <h6><a class="link-title" href="/product">candle</a></h6>
+              <div class="product-meta"><span class="me-2 text-dark">$25.00</span><span class="text-muted">x 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-5">
+        <div>
+          <div class="row align-items-center">
+            <div class="col-5 d-flex align-items-center">
+              <div class="me-4">
+                <button type="submit" class="btn btn-dark btn-sm"><i class="las la-times"></i>
+                </button>
+              </div>
+              <!-- Image -->
+              <a href="/product">
+                <img class="img-fluid" src="{{ url_for('static', filename = '/images/self/image11.jpg') }}" alt="...">
+              </a>
+            </div>
+            <div class="col-7">
+              <!-- Title -->
+              <h6><a class="link-title" href="/product">vlkfv</a></h6>
+              <div class="product-meta"><span class="me-2 text-dark">$27.00</span><span class="text-muted">x 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-5">
+        <div class="d-flex justify-content-between align-items-center mb-8"> <span class="text-muted">Subtotal:</span>  <span class="text-dark">$52.00</span> 
+        </div> <a href="/product" class="btn btn-dark btn-animated me-2"><i class="las la-shopping-cart me-1"></i>View Cart</a>
+        <a href="/checkout" class="btn btn-dark"><i class="las la-money-check me-1"></i>Continue To Checkout</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quick View Modal -->
+<div class="modal fade view-modal" id="quick-view" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0 pb-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-12">
+            <img class="img-fluid rounded" src="{{ url_for('static', filename = '/images/self/kabsoap.jpg') }}" alt="" />
+          </div>
+          <div class="col-lg-7 col-12 mt-5 mt-lg-0">
+            <div class="product-details">
+              <h3 class="mb-0">cream skinn</h3>
+              <div class="star-rating mb-4"><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i>
+              </div> <span class="product-price h4">$15.00 <del class="text-muted h6">$18.00</del></span>
+              <ul class="list-unstyled my-4">
+                <li class="mb-2">Availibility: <span class="text-muted"> In Stock</span> 
+                </li>
+                <li>Categories :<span class="text-muted"> self care</span>
+                </li>
+              </ul>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+              <div class="d-sm-flex align-items-center mb-5">
+                <div class="d-flex align-items-center me-sm-4">
+                  <button class="btn-product btn-product-up"> <i class="las la-minus"></i>
+                  </button>
+                  <input class="form-product" type="number" name="form-product" value="1">
+                  <button class="btn-product btn-product-down"> <i class="las la-plus"></i>
+                  </button>
+                </div>
+            
+              </div>
+              <div class="d-sm-flex align-items-center mt-5">
+
+                <a class="btn btn-animated btn-dark" href="/product"> <i class="las la-shopping-cart me-1"></i>Add To Cart</a>
+              </div>
+              <div class="d-sm-flex align-items-center border-top pt-4 mt-5">
+                <h6 class="mb-sm-0 me-sm-4">Share It:</h6>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a class="bg-white shadow-sm rounded p-2" href="https://www.facebook.com/people/Eco-Leaf/100078348708532/"><i class="la la-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="bg-white shadow-sm rounded p-2" href="https://www.instagram.com/leaf5361/"><i class="la la-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="bg-white shadow-sm rounded p-2" href="https://mobile.twitter.com/zahraaaltmimi"><i class="la la-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="bg-white shadow-sm rounded p-2" href="https://www.linkedin.com/company/leaf"><i class="la la-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+<!--back-to-top start-->
+
+<div class="scroll-top"><a class="smoothscroll" href="#"><i class="las la-angle-up"></i></a></div>
+
+<!--back-to-top end-->
+
+<!-- inject js start -->
+
+<script src="{{ url_for('static', filename = '/js/theme-plugin.js') }}"></script>
+<script src="{{ url_for('static', filename = '/js/theme-script.js') }}"></script>
+
+<!-- inject js end -->
+
+</body>
+</html>

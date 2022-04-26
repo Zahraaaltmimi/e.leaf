@@ -1,0 +1,65 @@
+{% extends 'base.html' %} 
+{% block content %}
+
+    <!--hero section start-->
+
+<section class="bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="h2 mb-0">personal care</h1>
+      </div>
+      <div class="col-md-6 mt-3 mt-md-0">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-md-end bg-transparent p-0 m-0">
+            <li class="breadcrumb-item"><a class="text-dark" href="HOME.html"><i class="las la-home me-1"></i>Home</a>
+            </li>
+            <li class="breadcrumb-item">Shop</li>
+            <li class="breadcrumb-item active text-success" aria-current="page">personal care</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- / .row -->
+  </div>
+  <!-- / .container -->
+</section>
+
+<!--hero section end--> 
+
+  <!-- care self products -->
+  <div class="page-content">
+
+    <section>
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-5 mb-3 mb-md-0"> <span class="text-muted">Showing 1 to 18 of 20 total</span>
+          </div>
+        </div>
+        <div class="row">
+          {% for product in context %}
+          <div class="col-lg-4 col-md-6">
+            <div class="card text-center card-product">
+              <div class="card-product__img">
+                <img class="card-img" src="{{ product[3] }}" alt="">
+                <ul class="card-product__imgOverlay">
+                  
+                  <li><button><a href="products/{{ product[0] }}"><i class="bi bi-cart3"></i></a></button></li>
+                  <li><button><a href="products/{{ product[0] }}"><i class="bi bi-heart"></i></a></button></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p>Plastic Alternatives</p>
+                <h4 class="card-product__title"><a href="products/{{ product[0] }}">{{ product[1] }}</a></h4>
+                <p class="card-product__price">${{ product[2] }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        
+      </div>
+    </section>
+  </div>
+
+  
+{% endblock %}

@@ -1,0 +1,156 @@
+{% extends 'base.html' %} 
+{% block content %}
+
+    <!--hero section-->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="h2 mb-0">Checkout</h1>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+
+
+    <!--body content-->
+
+    <div class="page-content">
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="checkout-form box-shadow white-bg">
+                            <h2 class="mb-4">Billing Details</h2>
+                            <form class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-1">First Name</label>
+                                        <input type="text" id="fname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-1">Last Name</label>
+                                        <input type="text" id="lname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-1">E-mail Address</label>
+                                        <input type="text" id="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-1">Phone Number</label>
+                                        <input type="text" id="phone" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-1">Company Name</label>
+                                        <input type="text" id="companyname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-1">City</label>
+                                        <select name="people" id="people" class="form-control">
+                                            <option value="#">Select City</option>
+                                            <option value="#">Baghdad</option>
+                                            <option value="#">Basra</option>
+                                            <option value="#">Erbil</option>
+                                            <option value="#">Mosul</option>
+                                            <option value="#">Hillah</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="mb-1">Address</label>
+                                        <input type="text" id="address" class="form-control">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 mt-5 mt-lg-0">
+                        <div class="shadow p-3 p-lg-5">
+                            <div class="p-3 p-lg-5 shadow-sm mb-5">
+                                <label class="text-black mb-3">Enter your coupon code if you have one</label>
+                                <div class="input-group">
+                                    <input class="form-control" id="c-code" placeholder="Coupon Code"
+                                        aria-label="Coupon Code" aria-describedby="button-addon2" type="text">
+                                    <button class="btn btn-dark btn-sm px-4" type="button"
+                                        id="button-addon2">Apply</button>
+                                </div>
+                            </div>
+                            <div class="p-3 p-lg-5 shadow-sm mb-5">
+                                <h3 class="mb-3">Your Order</h3>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3 border-bottom pb-3"><span> 1 x Product Name </span> $ 2404.00</li>
+                                    <li class="mb-3 border-bottom pb-3"><span> 1 x Product Name </span> $ 498.00</li>
+                                    <li class="mb-3 border-bottom pb-3"><span> Shipping </span> $ 0.00</li>
+                                    <li class="mb-3 border-bottom pb-3"><span> Subtotal </span> $ 2830.00</li>
+                                    <li><span><strong class="cart-total"> Total :</strong></span> <strong
+                                            class="cart-total">$ 2830.00 </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cart-detail my-5">
+                                <h3 class="mb-3">Payment Method</h3>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="customcheckbox1"
+                                            id="customcheckbox1">
+                                        <label class="form-check-label" for="customcheckbox1">Cash On Delivery</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="customcheckbox2"
+                                            id="customcheckbox2">
+                                        <label class="form-check-label" for="customcheckbox2">Credit/Debit Card</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="customcheckbox3"
+                                            id="customcheckbox3">
+                                        <label class="form-check-label" for="customcheckbox3">ZainCash</label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Asia Hawala</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success btn-block">Proceed to Payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+{% endblock %}

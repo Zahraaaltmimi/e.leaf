@@ -1,0 +1,131 @@
+{% extends 'base.html' %} 
+{% block content %}
+
+    <!--hero section-->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="h2 mb-0">Cart</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--body content start-->
+
+    <div class="page-content">
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="table-responsive">
+                            <table class="cart-table table text-center">
+                                <thead>
+                                    <tr class="border-bottom">
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-lg-flex align-items-center text-start">
+                                                <div class="flex-shrink-0">
+                                                    <a href="#">
+                                                        <img class="img-fluid" src="assets/images/100x100.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <div class="product-title mb-2"><a class="link-title"
+                                                            href="#">Product</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td> <span class="product-price text-muted">$35.00</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button class="btn-product btn-product-up"> <i class="las la-minus"></i>
+                                                </button>
+                                                <input class="form-product" type="number" name="form-product" value="1">
+                                                <button class="btn-product btn-product-down"> <i
+                                                        class="las la-plus"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td> <span class="product-price text-dark font-w-6">$35.00</span>
+                                        </td>
+                                        <td><button type="submit" class="btn btn-danger btn-sm"><i
+                                                    class="las la-times"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-lg-flex align-items-center text-start">
+                                                <div class="flex-shrink-0">
+                                                    <a href="#">
+                                                        <img class="img-fluid" src="assets/images/100x100.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <div class="product-title mb-2"><a class="link-title"
+                                                            href="#">Product</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td> <span class="product-price text-muted">$24.00</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button class="btn-product btn-product-up"> <i class="las la-minus"></i>
+                                                </button>
+                                                <input class="form-product" type="number" name="form-product" value="1">
+                                                <button class="btn-product btn-product-down"> <i
+                                                        class="las la-plus"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td> <span class="product-price text-dark font-w-6">$24.00</span>
+                                        </td>
+                                        <td><button type="submit" class="btn btn-danger btn-sm"><i
+                                                    class="las la-times"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                       
+                    </div>
+                    <div class="col-lg-4 ps-lg-5 mt-8 mt-lg-0">
+                        <div class="shadow rounded p-5">
+                            <h4 class="text-dark text-center mb-2">Cart Totals</h4>
+                            <div class="d-flex justify-content-between align-items-center border-bottom py-3"> <span
+                                    class="text-muted">Subtotal</span> <span class="text-dark">$59.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center border-bottom py-3"> <span
+                                    class="text-muted">Tax</span> <span class="text-dark">$00.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mb-5"> <span
+                                    class="text-dark h5">Total</span> <span class="text-dark font-w-7 h5">$59.00</span>
+                            </div> <a class="btn btn-success btn-animated btn-block"
+                                href="Checkout.html">Proceed To Checkout</a>
+                            <a class="btn btn-dark mt-3" href="HOME.html">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+     
+{% endblock %}
